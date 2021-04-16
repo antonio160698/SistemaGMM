@@ -23,7 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'https://localhost/gmmtv/public/';
+	public $baseURL = 'http://localhost/SistemaGMM/public/';
 
 	/**
 	 * --------------------------------------------------------------------------

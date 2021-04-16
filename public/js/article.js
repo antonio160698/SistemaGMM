@@ -1,4 +1,4 @@
-let Dir = 'https://localhost/gmmtv/public/';
+let Dir = 'http://localhost/SistemaGMM/public/';
 window.onload = ()=>{
     $.ajax({
 		url: Dir+'api/article',

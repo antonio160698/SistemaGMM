@@ -15,13 +15,13 @@ class UserController extends ResourceController {
 
     public function show($email = null, $pass = null){
         $generic = new Home();
+        $session = \Config\Services::session();
         if($email == null || $pass == null){
             return $this->respond($generic->genericMessage(null,"No existe el email o password", 400));
         }else{
             if($this->model->get($email, $pass) == null){
                 return $this->respond($generic->genericMessage(false,"No existe un usuario con esos datos", 200));
             }else{
-                $session = session();
                 $token = [
                     'email'=>$email,
                     'password'=>$pass,
@@ -37,6 +37,7 @@ class UserController extends ResourceController {
     }
     public function create(){
         $generic = new Home();
+        $session = \Config\Services::session();
         $this->response->setHeader('Access-Control-Allow-Origin', '*')
             ->setHeader('Access-Control-Allow-Headers', '*')
             ->setHeader('Access-Control-Allow-Methods', 'POST');
@@ -50,6 +51,13 @@ class UserController extends ResourceController {
             $this->request->getPost('district'), $this->request->getPost('postcode'), $this->request->getPost('contry'),
             $this->request->getPost('city'), $this->request->getPost('card'), $this->request->getPost('exp_date'),
             $this->request->getPost('cvv'));
+            $token = [
+                'email'=>$this->request->getPost('email'),
+                'password'=>$this->request->getPost('password'),
+                'loggin'=>TRUE
+            ];
+            $session->set($token);
+            echo $_SESSION;
             return $this->respond($generic->genericMessage($id,"",200));
         }else{
             $validation = \Config\Services::validation();
