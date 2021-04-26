@@ -10,8 +10,8 @@
             <div class="modal-body container" style="max-width:650px">
                 <form>
                     <div class="form-group">
-                        <label for="loginEmail">User or email</label>
-                        <input type="text" class="form-control" id="loginEmail" placeholder="User">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" class="form-control" id="loginEmail" placeholder="Email">
                     </div>
                     <div class="form-group">
                         <label for="loginPassword">Password</label>
@@ -36,59 +36,59 @@
                 <form id="registerstep-1">
                     <div class="form-group">
                         <label for="signinFname">Firstname</label>
-                        <input type="text" class="form-control" id="signinFname" placeholder="User">
+                        <input type="text" class="form-control" id="signinFname" placeholder="Firstname">
                     </div>
                     <div class="form-group">
                         <label for="signinLname">Lastname</label>
-                        <input type="text" class="form-control" id="signinLname">
+                        <input type="text" class="form-control" id="signinLname" placeholder="Lastname">
                     </div>
                     <div class="form-group">
                         <label for="signinEmail">Email</label>
-                        <input type="text" class="form-control" id="signinEmail" placeholder="User">
+                        <input type="email" class="form-control" id="signinEmail" placeholder="Email">
                     </div>
                     <div class="form-group">
                         <label for="signinPhone">Phone</label>
-                        <input type="text" class="form-control" id="signinPhone">
+                        <input type="number" class="form-control" id="signinPhone" placeholder="Phone">
                     </div>
                     <div class="form-group">
                         <label for="signinPass">Password</label>
-                        <input type="text" class="form-control" id="signinPass" placeholder="User">
+                        <input type="password" class="form-control" id="signinPass">
                     </div>
                     <div class="form-group">
                         <label for="signinCPass">Confirm password</label>
-                        <input type="text" class="form-control" id="signinCPass">
+                        <input type="password" class="form-control" id="signinCPass">
                     </div>
                 </form>
                 <form id="registerstep-2">
                     <div class="form-group">
                         <label for="signinAddress1">Address1</label>
-                        <input type="text" class="form-control" id="signinAddress1" placeholder="User">
+                        <input type="text" class="form-control" id="signinAddress1" placeholder="Address">
                     </div>
                     <div class="form-group">
                         <label for="signinAddress2">Address2</label>
-                        <input type="text" class="form-control" id="signinAddress2">
+                        <input type="text" class="form-control" id="signinAddress2"  placeholder="Address">
                     </div>
                     <div class="form-group">
                         <label for="signinDistrict">District</label>
-                        <input type="text" class="form-control" id="signinDistrict" placeholder="User">
+                        <input type="text" class="form-control" id="signinDistrict" placeholder="District">
                     </div>
                     <div class="form-group">
                         <label for="signinPostcode">Postcode</label>
-                        <input type="text" class="form-control" id="signinPostcode">
+                        <input type="number" maxlength="5" class="form-control" id="signinPostcode" placeholder="Postcode">
                     </div>
                     <div class="form-group">
                         <label for="signinContry">Contry</label>
-                        <input type="text" class="form-control" id="signinContry" placeholder="User">
+                        <input type="text" class="form-control" id="signinContry" placeholder="Contry">
                     </div>
                     <div class="form-group">
                         <label for="signinCity">Providence/State/City</label>
-                        <input type="text" class="form-control" id="signinCity">
+                        <input type="text" class="form-control" id="signinCity" placeholder="Providence/State/City">
                     </div>
                 </form>
                 <form id="registerstep-3">
                     <div class="form-group">
                         <label for="signinNombreCard">Nombre</label>
-                        <input type="text" class="form-control" id="signinNombreCard" placeholder="User">
+                        <input type="text" class="form-control" id="signinNombreCard" placeholder="Nombre">
                     </div>
                     <div class="form-group">
                         <label for="signinExpdate">Expiration date</label>
@@ -96,7 +96,7 @@
                     </div>
                     <div class="form-group">
                         <label for="signinCVV">CVV</label>
-                        <input type="text" class="form-control" id="signinCVV" placeholder="User">
+                        <input type="number" class="form-control" id="signinCVV" maxlength="3">
                     </div>
                 <button id="register-btn" class="btn btn-outline-primary py-0 px-2">REGISTER</button>
                 </form>

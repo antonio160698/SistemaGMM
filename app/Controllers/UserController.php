@@ -57,12 +57,20 @@ class UserController extends ResourceController {
                 'loggin'=>TRUE
             ];
             $session->set($token);
-            echo $_SESSION;
             return $this->respond($generic->genericMessage($id,"",200));
         }else{
             $validation = \Config\Services::validation();
             return $this->respond($generic->genericMessage(null,$validation->getErrors(),500));
         }
 
+    }
+    public function log(){
+        $generic = new Home();
+        $session = \Config\Services::session();
+        $val = false;
+        if(isset($_SESSION['email'])){
+            $val = true;
+        }
+        return $this->respond($generic->genericMessage($val,"",200));
     }
 }

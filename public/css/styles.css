@@ -133,6 +133,9 @@ button.close{
   height: 30px !important;
 border-radius: 10px !important;
 }
+.navbar-nav a {
+  color:rgb(39, 87, 150);
+}
 .nav.nav-pills a{
   border-radius: 20px;
   border: 1px solid #5FA3C8 !important;
@@ -150,4 +153,19 @@ border-radius: 10px !important;
 }
 .carousel-control-next, .carousel-control-prev{
   width:0% !important;
+}
+
+.dropdown-menu{
+  left:auto !important;
+  right: 1px;
+  float: right !important;
+}
+
+#ListArtist div:hover{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); 
+  z-index:2;
+  filter: brightness(120%);
+  box-shadow: 4px 4px 15px black;
 }

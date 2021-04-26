@@ -49,6 +49,7 @@ $routes->get('/api/skills', 'ArtistController::skill');
 $routes->get('/api/webshows', 'BeginController::webshows');
 $routes->get('/api/records', 'BeginController::record');
 $routes->get('/api/series', 'BeginController::series');
+$routes->get('/api/log', 'UserController::log');
 
 /*
  * --------------------------------------------------------------------

@@ -1,5 +1,6 @@
 let Dir = 'http://localhost/SistemaGMM/public/';
 window.onload = ()=>{
+    cuenta();
     $.ajax({
 		url: Dir+'api/artist',
 		type:'GET',
@@ -7,7 +8,7 @@ window.onload = ()=>{
 			if(data.data){
                 let cards = '';
                 for(let i=0; i < data.data.length; i++){
-                    cards += '<div class="col-md-3 px-0"><img class="w-100" src="'+data.data[i].Image+'"/></div>';
+                    cards += '<div class="col-md-2 p-0"><img class="w-100" style="height:280px;" src="'+data.data[i].Image+'"/></div>';
                 }
                 $('#ListArtist').append(cards);
             }

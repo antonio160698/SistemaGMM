@@ -46,6 +46,8 @@ $('#login-btn').click(()=>{
 			console.log(data);
 			if(data.data){
 				$('#modal-login').modal('hide');
+				$("#count-login").show();
+				$("#count-logout").hide();
 			}else{
 
 			}
@@ -91,9 +93,31 @@ $('#register-btn').click((e)=>{
 			console.log(data);
 			if(data.data){
 				$('#modal-login').modal('hide');
+				$(".admin").show();
+				$("#count-logout").hide();
+				$(".admin").show();
 			}else{
 				
 			}
 		}
 	})
+})
+let cuenta = () => {
+	$(".admin").hide();
+	$("#count-logout").hide();
+	$.ajax({
+		url: BASE_URL+'/api/log',
+		success:(data)=>{
+			if(data.data){
+				$(".admin").show();
+			}else{
+				$("#count-logout").show();
+			}
+		}
+	})
+} 
+$("#btn-search").click((e)=>{
+	e.preventDefault(); 
+	let search = $("#input-search").val();
+	window.location = BASE_URL+"/search/"+search;
 })

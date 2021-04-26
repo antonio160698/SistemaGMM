@@ -1,5 +1,6 @@
 let Dir = 'http://localhost/SistemaGMM/public/';
 window.onload = ()=>{
+    cuenta();
     $.ajax({
 		url: Dir+'api/article',
 		type:'GET',

@@ -1,4 +1,3 @@
-<?php $session = session(); ?>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
   </div>
@@ -11,7 +10,6 @@
     <span class="sr-only">Siguiente</span>
   </a>
 </div>
-<p><?=$session->email?></p>
 <div class="w-100 h-9 m-0 row bk-blue">
   <div class="col-md-2 p-1"></div>
   <div class="col-md-2 p-1"></div>
