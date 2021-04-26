@@ -133,8 +133,8 @@ button.close{
   height: 30px !important;
 border-radius: 10px !important;
 }
-.navbar-nav a {
-  color:rgb(39, 87, 150);
+.navbar-nav a, a.nav-link {
+  color:#25629F;
 }
 .nav.nav-pills a{
   border-radius: 20px;

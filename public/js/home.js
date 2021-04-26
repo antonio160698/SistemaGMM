@@ -93,9 +93,8 @@ $('#register-btn').click((e)=>{
 			console.log(data);
 			if(data.data){
 				$('#modal-login').modal('hide');
-				$(".admin").show();
 				$("#count-logout").hide();
-				$(".admin").show();
+				$(".admin").css("display", "block");
 			}else{
 				
 			}

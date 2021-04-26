@@ -33,34 +33,8 @@
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <div class="nav-item dropdown" id="drop">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Content</a>
-                    <div class="dropdown-menu">
-                        <br>
-                        <a href="#" class="dropdown-item">Series</a>
-                        <hr>
-                        <a href="#" class="dropdown-item">Records</a>
-                        <hr>
-                        <a href="#" class="dropdown-item">Variety</a>
-                        <br>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Shop</a>
-                    <div class="dropdown-menu">
-                        <br>
-                        <a href="#" class="dropdown-item">All</a>
-                        <a href="#" class="dropdown-item">News</a>
-                        <a href="#" class="dropdown-item">Promotions</a>
-                        <hr>
-                        <a href="#" class="dropdown-item">Merchandasing</a>
-                        <hr>
-                        <a href="#" class="dropdown-item">Skincare</a>
-                        <hr>
-                        <a href="#" class="dropdown-item">Makeup</a>
-                        <br>
-                    </div>
-                </div>
+                <a href="#" class="nav-item nav-link">Content</a>
+                <a href="<?php echo base_url("article"); ?>" class="nav-item nav-link">Shop</a>
                 <a href="<?php echo base_url("artist"); ?>" class="nav-item nav-link">Artist</a>
             </div>
 
@@ -71,26 +45,23 @@
                 <div class="dropdown admin">
                     <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="material-icons"><i class="fas fa-shopping-bag"></i></span></button>
                     <div class="dropdown-menu" aria-labelledby="dLabel">
-                        <form class="px-4 py-3">
-                            <div class="form-group">
-                                <label for="exampleDropdownFormEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                        <div class="row" style="width:300px;">
+                            <div class="col-4"><img src="<?php echo base_url("img/carrousel/images.jpg"); ?>" class="w-100"></div>
+                            <div class="col-6">
+                                <p>Title
+                                <p>
+                                <div class="row">
+                                    <input type="number" min="0" id="" class="col-6" style="height:25px;padding-right:0px;padding-left:0px;">
+                                    <p class="col-6">total</p>
+                                </div>
+                                <button class="btn col-12" style="background:#25629F; color:white;">CHECKOUT</button>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleDropdownFormPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                <label class="form-check-label" for="dropdownCheck">
-                                    Remember me
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Sign in</button>
-                        </form>
+                        </div>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">New around here? Sign up</a>
-                        <a class="dropdown-item" href="#">Forgot password?</a>
+                        <div class="flex-row">
+                        <a class="float-left nav-link" href="#">Wishlist</a>
+                        <a class="float-right nav-link" href="#">Log out</a>
+                        </div>
                     </div>
                 </div>
                 <button id="count-logout" type="button" data-toggle="modal" data-target=".bd-example-modal-lg"><span class="material-icons">account_circle</span></button>
