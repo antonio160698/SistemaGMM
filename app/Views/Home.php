@@ -11,10 +11,10 @@
   </a>
 </div>
 <div class="w-100 h-9 m-0 row bk-blue">
-  <div class="col-md-2 p-1"></div>
-  <div class="col-md-2 p-1"></div>
-  <div class="col-md-2 p-1"></div>
-  <div class="col-md-2 p-1"></div>
+  <div class="col-md-2 p-1"><a href="https://www.facebook.com/gmmtvofficial/" target="_blank"><i class="fab fa-facebook" id="iconmedium"></i></a></div>
+  <div class="col-md-2 p-1"><a href="https://www.instagram.com/GMMTV/" target="_blank"><i class="fab fa-instagram" id="iconmedium"></i></a></div>
+  <div class="col-md-2 p-1"><a href="https://www.youtube.com/channel/UC8BzJM6_VbZTdiNLD4R1jxQ" target="_blank"><i class="fab fa-youtube" id="iconmedium"></i></a></div>
+  <div class="col-md-2 p-1"><a href="https://twitter.com/GMMTV" target="_blank"><i class="fab fa-twitter" id="iconmedium"></i></a></div>
   <div class="col-md-4 p-1">
     <div class="d-flex align-items-center">
       <img class="img-fluid" src="https://www.gmm-tv.com/public/img/text_20201007.png">

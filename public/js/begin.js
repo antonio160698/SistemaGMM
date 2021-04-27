@@ -1,8 +1,7 @@
-let Dir = 'http://localhost/SistemaGMM/public/';
 window.onload = ()=>{
     cuenta();
     $.ajax({
-		url: BASE_URL+'api/begin',
+		url: BASE_URL+'/api/begin',
 		type:'GET',
 		success:(data)=>{
 			if(data.data){
@@ -19,7 +18,7 @@ window.onload = ()=>{
 		}
 	})
     $.ajax({
-		url: BASE_URL+'api/series',
+		url: BASE_URL+'/api/series',
 		type:'GET',
 		success:(data)=>{
 			if(data.data){
@@ -36,7 +35,7 @@ window.onload = ()=>{
 		}
 	})
     $.ajax({
-		url: BASE_URL+'api/records',
+		url: BASE_URL+'/api/records',
 		type:'GET',
 		success:(data)=>{
 			if(data.data){
@@ -53,7 +52,7 @@ window.onload = ()=>{
 		}
 	})
     $.ajax({
-		url: BASE_URL+'api/webshows',
+		url: BASE_URL+'/api/webshows',
 		type:'GET',
 		success:(data)=>{
 			if(data.data){

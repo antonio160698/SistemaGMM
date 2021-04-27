@@ -23,8 +23,7 @@ footer {
     color: white;
   }
   
-  footer #icons {
-    margin-top: 15px;
+  footer #icons, .bk-blue>.col-md-2>a {
     font-size: 42px;
     margin: 10px;
     margin-top: 20px;
@@ -181,4 +180,37 @@ border-radius: 10px !important;
   background-size: cover;
   background-attachment: fixed;
     background-position: center;
+}
+
+.bk-blue .fa-facebook{
+  color:#3b5998;
+}
+
+.bk-blue .fa-instagram{
+  background: -webkit-linear-gradient(45deg, #feda77,#f58529 , #dd2a7b, #8134af, #515bd4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #dd2a7b;
+}
+.bk-blue .fa-twitter{
+  color:#00acee;
+}
+.bk-blue .fa-youtube{
+  font-size:38px;
+  color:#c4302b;
+}
+
+.bk-blue i{
+  padding: 4px;
+  display: block;
+}
+
+.bk-blue>.col-md-2>a{
+  margin-top: 10px;
+  border-radius: 50%;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  text-align: center;
 }
