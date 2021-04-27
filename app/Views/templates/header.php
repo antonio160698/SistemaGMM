@@ -33,7 +33,7 @@
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="#" class="nav-item nav-link">Content</a>
+                <a href="<?php echo base_url(); ?>" class="nav-item nav-link">Content</a>
                 <a href="<?php echo base_url("article"); ?>" class="nav-item nav-link">Shop</a>
                 <a href="<?php echo base_url("artist"); ?>" class="nav-item nav-link">Artist</a>
             </div>
