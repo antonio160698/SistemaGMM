@@ -39,6 +39,8 @@ $routes->get('/shop', 'Home::shop');
 $routes->get('/article', 'Home::article');
 $routes->get('/whishlist', 'Home::whishlist');
 $routes->get('/artist', 'Home::artista');
+$routes->get('/terms', 'Home::term');
+$routes->get('/privacy-policy', 'Home::privacy');
 
 $routes->resource('usuario', ['controller'=> 'UserController']);
 $routes->resource('api/article', ['controller'=> 'ArticleController']);

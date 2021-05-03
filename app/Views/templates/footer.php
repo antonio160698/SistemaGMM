@@ -117,16 +117,16 @@
 </div>
 <footer class="bg-primary text-white text-center text-lg-start">
     <!-- Grid container -->
-    <div class="container p-4">
+    <div class="container py-4 px-0">
         <!--Grid row-->
         <div class="row">
-            <div class="col-8 col-md-6"><label> @2020 GMMTV CO., LTD. - ALL RIGHTS RESERVED.</label>
+            <div class="col-12 col-md-9" style="white-space: nowrap;"><label> @2020 GMMTV CO., LTD. - ALL RIGHTS RESERVED.</label>
                 <a href="https://www.gmm-tv.com/upload/gmmtv-privacy-notice.pdf" target="_blank">PRIVACY NOTE</a>
-                <a href="privacy_policy.php">| PRIVACY POLICY</a> <a href="terms.php">| TERMS OF SERVICES</a>
+                <a href="<?= base_url('privacy-policy') ?>">| PRIVACY POLICY</a> <a href="<?= base_url('terms') ?>">| TERMS OF SERVICES</a>
             </div>
-            <div class="col-4 col-md-6"><label>© GMMTV SHOP. 2020. All Rights Reserved</label></div><br>
+            <div class="col-4 col-md-3" style="white-space: nowrap;"><label>© GMMTV SHOP. 2020. All Rights Reserved</label></div><br>
 
-            <div class="col-md-4"><br>
+            <div class="col-md-4">
                 <label>CONTACT INFO</label><br>
                 <label>ADDRESS:</label><br>
                 <label> GMMTV CO., LTD. (30FL.) 50 GMM Grammy Place, Sukhumvit 21 Rd. (Asoke) Khlongtoeinuea, Wattana, Bangkok 10110 </label><br>

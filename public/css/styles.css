@@ -7,7 +7,7 @@ footer {
     size: 15px;
   }
   
-  footer label {
+  footer label, footer span {
     margin-top: 20px;
   }
   
