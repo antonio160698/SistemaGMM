@@ -11,7 +11,7 @@ class BeginModel extends Model
     
 
     public function todo(){
-        return $this->select('BeginId, Image')->limit(3)->orderBy('BeginId','DESC')->find();
+        return $this->select('BeginId, Image, Title')->limit(3)->orderBy('BeginId','DESC')->find();
     }
 
     public function detail($id){
@@ -19,15 +19,15 @@ class BeginModel extends Model
     }
 
     public function series(){
-        return $this->select('BeginId, Image')->where("Genere = 'Serie'")->limit(3)->orderBy('BeginId', 'RANDOM')->find();
+        return $this->select('BeginId, Image, Title')->where("Genere = 'Serie'")->limit(3)->orderBy('BeginId', 'RANDOM')->find();
     }
 
     public function webshow(){
-        return $this->select('BeginId, Image')->where("Genere = 'Webshow'")->limit(3)->orderBy('BeginId', 'RANDOM')->find();
+        return $this->select('BeginId, Image, Title')->where("Genere = 'Webshow'")->limit(3)->orderBy('BeginId', 'RANDOM')->find();
     }
 
     public function record(){
-        return $this->select('BeginId, Image')->where("Genere = 'Record'")->limit(3)->orderBy('BeginId', 'RANDOM')->find();
+        return $this->select('BeginId, Image, Title')->where("Genere = 'Record'")->limit(3)->orderBy('BeginId', 'RANDOM')->find();
     }
     public function search($v_search){
         $db = db_connect();

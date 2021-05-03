@@ -1,4 +1,5 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators"></ol>
   <div class="carousel-inner">
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -26,7 +27,6 @@
 </div>
 <div class="w-100 row bk-white">
   <div class="col-md-4 text-center">
-    <a>
       <h4 class="py-2">Series</h4>
       <div id="carouselSeries" style="width:300px; display:inline-block;" class="carousel slide pb-2" data-ride="carousel">
         <div class="carousel-inner">
@@ -40,10 +40,8 @@
           <span class="sr-only">Siguiente</span>
         </a>
       </div>
-    </a>
   </div>
   <div class="col-md-4 text-center">
-    <a>
       <h4 class="py-2">Variety</h4>
       <div id="carouselVariety" style="width:300px; display:inline-block;" class="carousel slide pb-2" data-ride="carousel">
         <div class="carousel-inner">
@@ -57,10 +55,8 @@
           <span class="sr-only">Siguiente</span>
         </a>
       </div>
-    </a>
   </div>
   <div class="col-md-4 text-center">
-    <a>
       <h4 class="py-2">Records</h4>
       <div id="carouselRecords" style="width:300px; display:inline-block;" class="carousel slide pb-2" data-ride="carousel">
         <div class="carousel-inner">
@@ -74,7 +70,6 @@
           <span class="sr-only">Siguiente</span>
         </a>
       </div>
-    </a>
   </div>
 </div>
 <script src="js/begin.js"></script>
