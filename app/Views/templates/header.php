@@ -38,9 +38,9 @@
                 <a href="<?php echo base_url("artist"); ?>" class="nav-item nav-link">Artist</a>
             </div>
 
-            <form class="form-inline ml-auto" style="background-color:transparent;">
+            <form class="form-inline" style="width:60%;background-color:transparent;right:20px;position:absolute;">
 
-                <input id="input-search" type="text" class="form-control mr-sm-2" placeholder="Search">
+                <input id="input-search" style="width:88%;" type="text" class="form-control mr-sm-2" placeholder="Search">
                 <button id="btn-search"><span class="material-icons">search</span></button>
                 <div class="dropdown admin">
                     <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="material-icons"><i class="fas fa-shopping-bag"></i></span></button>

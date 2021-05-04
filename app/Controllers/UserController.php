@@ -41,7 +41,7 @@ class UserController extends ResourceController {
         $this->response->setHeader('Access-Control-Allow-Origin', '*')
             ->setHeader('Access-Control-Allow-Headers', '*')
             ->setHeader('Access-Control-Allow-Methods', 'POST');
-        if($this->validate('signin')){
+        //if($this->validate('signin')){
             if(!$this->request->getPost('card') || !$this->request->getPost('exp_date') || !$this->request->getPost('cvv')){
                 return $this->respond($generic->genericMessage(null,"Existe algun dato de la tarjeta que no existe",400));
             }
@@ -58,10 +58,10 @@ class UserController extends ResourceController {
             ];
             $session->set($token);
             return $this->respond($generic->genericMessage($id,"",200));
-        }else{
+        /*}else{
             $validation = \Config\Services::validation();
             return $this->respond($generic->genericMessage(null,$validation->getErrors(),500));
-        }
+        }*/
 
     }
     public function log(){

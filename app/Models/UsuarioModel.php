@@ -19,7 +19,7 @@ class UsuarioModel extends Model
     public function post($firstname, $lastname, $email, $phone, $password, $addres1, $address2, 
     $district, $postcode, $contry, $city, $card, $exp_date, $cvv){
         $direccion = new DireccionModel();
-        echo $id_direccion = $direccion->post($addres1,$address2,$district,$postcode,$contry,$city);
+        $id_direccion = $direccion->post($addres1,$address2,$district,$postcode,$contry,$city);
         $id = $this->insert([
             'Firstname' => $firstname,
             'Lastname' => $lastname,
@@ -31,7 +31,6 @@ class UsuarioModel extends Model
             'ExpDate' => $exp_date,
             'CVV' => $cvv
         ]);
-        echo $id;
         return $id;
     }
 

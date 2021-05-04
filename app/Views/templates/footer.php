@@ -78,7 +78,9 @@
                     </div>
                     <div class="form-group">
                         <label for="signinContry">Contry</label>
-                        <input type="text" class="form-control" id="signinContry" placeholder="Contry">
+                        <select class="form-control" id="signinContry" placeholder="Contry">
+                            <option selected disabled value="">Selecciona</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="signinCity">Providence/State/City</label>
@@ -98,7 +100,7 @@
                         <label for="signinCVV">CVV</label>
                         <input type="number" class="form-control" id="signinCVV" maxlength="3">
                     </div>
-                <button id="register-btn" class="btn btn-outline-primary py-0 px-2">REGISTER</button>
+                <!-- <button id="register-btn" class="btn btn-outline-primary py-0 px-2">REGISTER</button> -->
                 </form>
                 <nav class="nav nav-pills nav-fill row">
                     <div class="col-4">

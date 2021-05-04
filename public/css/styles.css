@@ -136,8 +136,8 @@ button.close{
   height: 30px !important;
 border-radius: 10px !important;
 }
-.navbar-nav a, a.nav-link, .navbar-nav a:hover, a.nav-link:hover {
-  color:#25629F !important;
+.navbar-nav a, .navbar-nav>a.nav-link, .navbar-nav a:hover, .navbar-nav>a.nav-link:hover {
+  color:#25629F;
 }
 .nav.nav-pills a{
   border-radius: 20px;
@@ -210,4 +210,4 @@ border-radius: 10px !important;
   display: inline-block;
   text-align: center;
 }
-a, a:hover{color:white !important;text-decoration: none !important;}
+footer a, footer a:hover, .carousel-inner a, .carousel-inner a:hover{color:white !important;text-decoration: none !important;}
