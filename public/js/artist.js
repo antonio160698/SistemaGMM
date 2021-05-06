@@ -150,11 +150,11 @@ var myChart1 = new Chart(
     {
         type: 'doughnut',
         data: {
-            labels: ['2018', '2019', '2020', '2021'],
+            labels: ['2020', '2021'],
             datasets: [{
                 label:'Tiktok',
                 backgroundColor: ['rgb(255,99,132)', 'rgb(255,159, 64)', 'rgb(255,205, 86)', 'rgb(75,192, 192)', 'rgb(54,132, 235)'],
-                data: [10, 156, 678, 1289, 1528, 2803, 3073],
+                data: [10, 156],
                 borderWidth: 1
             }]
         },
@@ -189,11 +189,11 @@ var myChart2 = new Chart(
     {
         type: 'doughnut',
         data: {
-            labels: ['2018', '2019', '2020', '2021'],
+            labels: [ '2020', '2021'],
             datasets: [{
                 label:'Twitter',
                 backgroundColor: ['rgb(255,99,132)', 'rgb(255,159, 64)', 'rgb(255,205, 86)', 'rgb(75,192, 192)', 'rgb(54,132, 235)'],
-                data: [13739, 247493, 327283, 427301, 538382, 1608392, 2300000],
+                data: [13739, 247493],
                 borderWidth: 1
             }]
         },
@@ -227,11 +227,11 @@ var myChart3 = new Chart(
     {
         type: 'doughnut',
         data: {
-            labels: ['2018', '2019', '2020', '2021'],
+            labels: ['2020', '2021'],
             datasets: [{
                 label:'Instagram',
                 backgroundColor: ['rgb(255,99,132)', 'rgb(255,159, 64)', 'rgb(255,205, 86)', 'rgb(75,192, 192)', 'rgb(54,132, 235)'],
-                data: [1273933, 2394052, 3282932, 4392011, 5373910, 6372922, 6800000],
+                data: [1273933, 2394052],
                 borderWidth: 1
             }],
                 scales: {
