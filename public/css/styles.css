@@ -220,3 +220,7 @@ border-radius: 10px !important;
   text-align: center;
 }
 footer a, footer a:hover, .carousel-inner a, .carousel-inner a:hover, .modal-body a:hover{color:white !important;text-decoration: none !important;}
+
+.carousel-inner a> p, .carousel-inner a> p:hover{
+  color:black !important;
+}

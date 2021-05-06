@@ -42,6 +42,12 @@ class Home extends BaseController
 		// 	echo session()->get('login');
 		// }
 	}
+	public function detailArticle()
+	{
+		echo view('templates/header');
+		echo view('Detail_Article');
+		echo view('templates/footer');
+	}
 	public function artista()
 	{
 		// if(session()->get('login')){
