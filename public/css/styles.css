@@ -150,7 +150,7 @@ border-radius: 10px !important;
   display:inline-flex !important;
 }
 
-.carousel>a>.fas{
+.carousel>a>.fas, .modal-body a>.fas{
   font-size: xxx-large;
   color: black;
 }
@@ -187,30 +187,30 @@ border-radius: 10px !important;
     background-position: center;
 }
 
-.bk-blue .fa-facebook{
+.bk-blue .fa-facebook, .modal-body .fa-facebook{
   color:#3b5998;
 }
 
-.bk-blue .fa-instagram{
+.bk-blue .fa-instagram, .modal-body .fa-instagram{
   background: -webkit-linear-gradient(45deg, #feda77,#f58529 , #dd2a7b, #8134af, #515bd4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #dd2a7b;
 }
-.bk-blue .fa-twitter{
+.bk-blue .fa-twitter, .modal-body .fa-twitter{
   color:#00acee;
 }
-.bk-blue .fa-youtube{
+.bk-blue .fa-youtube, .modal-body .fa-youtube{
   font-size:38px;
   color:#c4302b;
 }
 
-.bk-blue i{
+.bk-blue i, .modal-body i{
   padding: 4px;
   display: block;
 }
 
-.bk-blue>.col-md-2>a{
+.bk-blue>.col-md-2>a, .modal-body .col-md-2>a{
   margin-top: 10px;
   border-radius: 50%;
   background-color: white;
@@ -219,4 +219,4 @@ border-radius: 10px !important;
   display: inline-block;
   text-align: center;
 }
-footer a, footer a:hover, .carousel-inner a, .carousel-inner a:hover{color:white !important;text-decoration: none !important;}
+footer a, footer a:hover, .carousel-inner a, .carousel-inner a:hover, .modal-body a:hover{color:white !important;text-decoration: none !important;}

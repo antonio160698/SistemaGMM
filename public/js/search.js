@@ -1,8 +1,7 @@
-let Dir = 'http://localhost/SistemaGMM/public/';
 window.onload = ()=>{
     cuenta();
     $.ajax({
-		url: Dir+'api/search/'+window.location.href.split('/')[6],
+		url: BASE_URL+'/api/search/'+window.location.href.split('/')[6],
 		type:'GET',
 		success:(data)=>{
 			if(data.data){

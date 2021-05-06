@@ -1,8 +1,7 @@
-let Dir = 'http://localhost/SistemaGMM/public/';
 window.onload = ()=>{
     cuenta();
     $.ajax({
-		url: Dir+'api/article',
+		url: BASE_URL+'/api/article',
 		type:'GET',
 		success:(data)=>{
 			if(data.data){
@@ -13,7 +12,7 @@ window.onload = ()=>{
                     }else{
                         cards += '<div class="carousel-item">'
                     }
-                    cards += '<div class="card"><img class="img-fluid" src="'+data.data[i].Imagen+'"/><p class="text-center">'+data.data[i].Descripcion.substr(0,50)+'...</p><p class="text-center">'+parseInt(data.data[i].Price).toLocaleString('th-TH', { style: 'currency', currency: 'THB' })+'</p></div></div>';
+                    cards += '<div class="card mx-1"><img class="img-fluid" src="'+data.data[i].Imagen+'"/><p class="text-center">'+data.data[i].Descripcion.substr(0,50)+'...</p><p class="text-center">'+parseInt(data.data[i].Price).toLocaleString('th-TH', { style: 'currency', currency: 'THB' })+'</p></div></div>';
                 }
                 $('#carouselBestSeller > .carousel-inner').append(cards);
                 $('.carousel .carousel-item').each(function() {

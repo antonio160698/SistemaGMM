@@ -11,7 +11,7 @@ class BeginModel extends Model
     
 
     public function todo(){
-        return $this->select('BeginId, Image, Title')->limit(3)->orderBy('BeginId','DESC')->find();
+        return $this->select('BeginId, Image, Title')->limit(3)->orderBy('Year','DESC')->find();
     }
 
     public function detail($id){

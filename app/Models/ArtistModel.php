@@ -13,7 +13,7 @@ class ArtistModel extends Model
     }
 
     public function artists(){
-        return $this->select('IdArtist, Image, Nickname')->findAll();
+        return $this->select('IdArtist, Image, Nickname')->orderby('Instagram','DESC')->findAll();
     }
 
     public function skill(){
