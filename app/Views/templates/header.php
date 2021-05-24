@@ -60,7 +60,7 @@
                         <div class="dropdown-divider"></div>
                         <div class="flex-row">
                         <a class="float-left nav-link" href="#">Wishlist</a>
-                        <a class="float-right nav-link" href="#">Log out</a>
+                        <a class="float-right nav-link" href="#" id="logout">Log out</a>
                         </div>
                     </div>
                 </div>

@@ -12,7 +12,7 @@ window.onload = ()=>{
                     }else{
                         cards += '<div class="carousel-item">'
                     }
-                    cards += '<div class="card mx-1"><img class="img-fluid" src="'+data.data[i].Imagen+'"/><a style="color:black;" href="'+BASE_URL+'/detail-article/1"><p class="text-center">'+data.data[i].Descripcion.substr(0,50)+'...</p><p class="text-center">'+parseInt(data.data[i].Price).toLocaleString('th-TH', { style: 'currency', currency: 'THB' })+'</p></a></div></div>';
+                    cards += '<div class="card mx-1"><img class="img-fluid" src="'+data.data[i].Imagen+'"/><a style="color:black;" href="'+BASE_URL+'/detail-article/'+data.data[i].IdArticulo+'"><p class="text-center">'+data.data[i].Descripcion.substr(0,50)+'...</p><p class="text-center">'+parseInt(data.data[i].Price).toLocaleString('th-TH', { style: 'currency', currency: 'THB' })+'</p></a></div></div>';
                 }
                 $('#carouselBestSeller > .carousel-inner').append(cards);
                 $('.carousel .carousel-item').each(function() {

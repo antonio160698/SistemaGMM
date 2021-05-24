@@ -143,3 +143,13 @@ $("#btn-search").click((e)=>{
 	let search = $("#input-search").val();
 	window.location = BASE_URL+"/search/"+search;
 })
+
+$("#logout").click((e)=> {
+	e.preventDefault(); 
+	$.ajax({
+		url: BASE_URL+'/api/log_out',
+		success:(data)=>{
+			cuenta();
+		}
+	})
+})

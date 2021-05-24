@@ -53,6 +53,7 @@ $routes->get('/api/webshows', 'BeginController::webshows');
 $routes->get('/api/records', 'BeginController::record');
 $routes->get('/api/series', 'BeginController::series');
 $routes->get('/api/log', 'UserController::log');
+$routes->get('/api/log_out', 'UserController::log_out');
 
 /*
  * --------------------------------------------------------------------
