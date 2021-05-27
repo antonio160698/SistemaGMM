@@ -3,7 +3,7 @@
 use CodeIgniter\Model;
 use Exception;
 
-class ArtistModel extends Model
+class WishlistModel extends Model
 {
     protected $table = 'wishlist';
     protected $primaryKey = 'IdWishlist';
@@ -13,18 +13,20 @@ class ArtistModel extends Model
         return $this->findAll();
     }
 
-    public function post($Cantidad, $IdArticle){
+    public function post($IdArticle){
+        $session = \Config\Services::session();
         $id = $this->insert([
-            'IdUsuario' => $IdArticle,
-            'IdArticle' => $Cantidad
+            'IdUsuario' => $session->get('id'),
+            'IdArticle' => $IdArticle
         ]);
         return $id;
     }
 
-    public function detail($id){
+    public function detail(){
+        $session = \Config\Services::session();
         $db = db_connect();
         try{
-            $queryArtist = "SELECT art.* FROM Whishlist Wl join article art on art.IdArticulo = Wl.IdArticle where Wl.IdUsuario ="+$id+";";
+            $queryArtist = "SELECT art.* FROM Whishlist Wl join article art on art.IdArticulo = Wl.IdArticle where Wl.IdUsuario ="+$session->get('id')+";";
             $buscar1 = $db->query($queryArtist)->getResult();
             $execute = $buscar1;
         }catch(Exception $e){

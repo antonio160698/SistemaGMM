@@ -42,7 +42,7 @@ $routes->get('/whishlist', 'Home::whishlist');
 $routes->get('/artist', 'Home::artista');
 $routes->get('/terms', 'Home::term');
 $routes->get('/privacy-policy', 'Home::privacy');
-$routes->get('/compras', 'Home::compras');
+$routes->get('/compras', 'Home::compra');
 $routes->get('/wishlist', 'Home::wishlist');
 
 $routes->resource('usuario', ['controller'=> 'UserController']);

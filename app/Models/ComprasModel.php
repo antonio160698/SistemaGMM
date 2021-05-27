@@ -3,7 +3,7 @@
 use CodeIgniter\Model;
 use Exception;
 
-class ArtistModel extends Model
+class ComprasModel extends Model
 {
     protected $table = 'compra';
     protected $primaryKey = 'IdCompra';

@@ -6,7 +6,7 @@ use CodeIgniter\RESTful\ResourceController;
 use App\Controllers\Home;
 use Exception;
 
-class UserController extends ResourceController
+class WishlistController extends ResourceController
 {
 
     protected $modelName = 'App\Models\WishlistModel';
@@ -22,7 +22,7 @@ class UserController extends ResourceController
         $generic = new Home();
         $session = \Config\Services::session();
         if (isset($_SESSION['email'])) {
-            return $this->respond($generic->genericMessage($this->model->detail($_SESSION['id']),"", 200));
+            return $this->respond($generic->genericMessage($this->model->detail(),"", 200));
         }else{
             return $this->respond($generic->genericMessage(null, "No ha iniciado sesion", 400));
         }
@@ -40,8 +40,7 @@ class UserController extends ResourceController
             return $this->respond($generic->genericMessage(null, "No existe el articulo", 400));
         }
         $id = $this->model->post(
-            $this->request->getPost('articulo'),
-            $_SESSION['id']
+            $this->request->getPost('articulo')
         );
         return $this->respond($generic->genericMessage($id, "", 200));
     }

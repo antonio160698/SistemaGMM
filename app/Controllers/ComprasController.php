@@ -6,7 +6,7 @@ use CodeIgniter\RESTful\ResourceController;
 use App\Controllers\Home;
 use Exception;
 
-class UserController extends ResourceController
+class ComprasController extends ResourceController
 {
 
     protected $modelName = 'App\Models\ComprasModel';
@@ -30,7 +30,7 @@ class UserController extends ResourceController
             ->setHeader('Access-Control-Allow-Headers', '*')
             ->setHeader('Access-Control-Allow-Methods', 'POST');
         //if($this->validate('signin')){
-        if (!$this->request->getPost('articulo')) {
+        if (!$this->request->getPost('articulo') && !$this->request->getPost('cantidad')) {
             return $this->respond($generic->genericMessage(null, "No existe el articulo", 400));
         }
         $id = $this->model->post(
