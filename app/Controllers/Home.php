@@ -80,6 +80,18 @@ class Home extends BaseController
 		echo view('privacy_policy');
 		echo view('templates/footer');
 	}
+	public function compra()
+	{
+		echo view('templates/header');
+		echo view('Compras');
+		echo view('templates/footer');
+	}
+	public function wishlist()
+	{
+		echo view('templates/header');
+		echo view('Wishlist');
+		echo view('templates/footer');
+	}
 	public function genericMessage($data, $msg, $code)
 	{
 		if ($code == 200) {

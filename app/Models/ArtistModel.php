@@ -20,4 +20,8 @@ class ArtistModel extends Model
         return $this->select('Skills')->distinct()->findAll();
     }
 
+    public function detail($id){
+        return $this->find($id);
+    }
+
 }

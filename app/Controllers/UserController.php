@@ -24,12 +24,14 @@ class UserController extends ResourceController
         if ($email == null || $pass == null) {
             return $this->respond($generic->genericMessage(null, "No existe el email o password", 400));
         } else {
-            if ($this->model->get($email, $pass) == null) {
+            $idsession = $this->model->get($email, $pass);
+            if ($idsession == null) {
                 return $this->respond($generic->genericMessage(false, "No existe un usuario con esos datos", 200));
             } else {
                 $token = [
                     'email' => $email,
                     'password' => $pass,
+                    'id'=> $idsession, 
                     'loggin' => TRUE
                 ];
                 $session->set($token);
@@ -70,7 +72,7 @@ class UserController extends ResourceController
         try{
             $email = \Config\Services::email();
     
-            $email->setFrom('antonio.1606.98@gmail.com', 'GMMTV');
+            $email->setFrom('pruebas@gmail.com', 'GMMTV');
             $email->setTo($this->request->getPost('email'));
     
             $email->setSubject('Bienvenido GMMTV');
@@ -86,6 +88,7 @@ class UserController extends ResourceController
         $token = [
             'email' => $this->request->getPost('email'),
             'password' => $this->request->getPost('password'),
+            'id' => $id,
             'loggin' => TRUE
         ];
         $session->set($token);

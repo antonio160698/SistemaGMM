@@ -42,9 +42,13 @@ $routes->get('/whishlist', 'Home::whishlist');
 $routes->get('/artist', 'Home::artista');
 $routes->get('/terms', 'Home::term');
 $routes->get('/privacy-policy', 'Home::privacy');
+$routes->get('/compras', 'Home::compras');
+$routes->get('/wishlist', 'Home::wishlist');
 
 $routes->resource('usuario', ['controller'=> 'UserController']);
 $routes->resource('api/article', ['controller'=> 'ArticleController']);
+$routes->resource('api/compras', ['controller'=> 'ComprasController']);
+$routes->resource('api/wishlist', ['controller'=> 'WishlistController']);
 $routes->resource('api/artist', ['controller'=> 'ArtistController']);
 $routes->resource('api/begin', ['controller'=> 'BeginController']);
 $routes->get('/api/search/(:segment)', 'BeginController::search/$1');

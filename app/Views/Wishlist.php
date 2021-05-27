@@ -1,3 +1,7 @@
+<div class="container">
+    <div id="search" class="row mx-0"></div>
+</div>
+<script>
 window.onload = ()=>{
     cuenta();
     $.ajax({
@@ -15,3 +19,4 @@ window.onload = ()=>{
 		}
 	})
 }
+</script>
