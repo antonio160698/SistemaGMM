@@ -15,8 +15,10 @@ class WishlistModel extends Model
 
     public function post($IdArticle){
         $session = \Config\Services::session();
+        $usuario = $_SESSION['id'];
+        echo $usuario;
         $id = $this->insert([
-            'IdUsuario' => $session->get('id'),
+            'IdUsuario' => $usuario,
             'IdArticle' => $IdArticle
         ]);
         return $id;
@@ -26,7 +28,9 @@ class WishlistModel extends Model
         $session = \Config\Services::session();
         $db = db_connect();
         try{
-            $queryArtist = "SELECT art.* FROM Whishlist Wl join article art on art.IdArticulo = Wl.IdArticle where Wl.IdUsuario ="+$session->get('id')+";";
+            $usuario = $_SESSION['id'];
+            echo $usuario;
+            $queryArtist = "SELECT art.* FROM Whishlist Wl join article art on art.IdArticulo = Wl.IdArticle where Wl.IdUsuario ="+$usuario+";";
             $buscar1 = $db->query($queryArtist)->getResult();
             $execute = $buscar1;
         }catch(Exception $e){

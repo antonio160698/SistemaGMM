@@ -27,7 +27,7 @@
     <nav class="navbar navbar-expand-md">
 
         <div> <a href="<?php echo base_url(); ?>"><img src="https://upload.wikimedia.org/wikipedia/commons/3/39/GMMTV_Logo.svg" id="logo"></a></div>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler pr-2" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -59,7 +59,7 @@
                         </div>
                         <div class="dropdown-divider"></div>
                         <div class="flex-row">
-                        <a class="float-left nav-link" href="#">Wishlist</a>
+                        <a class="float-left nav-link" href="<?php echo base_url("wishlist"); ?>">Wishlist</a>
                         <a class="float-right nav-link" href="#" id="logout">Log out</a>
                         </div>
                     </div>

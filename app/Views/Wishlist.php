@@ -5,7 +5,7 @@
 window.onload = ()=>{
     cuenta();
     $.ajax({
-		url: BASE_URL+'/api/search/'+window.location.href.split('/')[6],
+		url: BASE_URL+'/api/wishlist',
 		type:'GET',
 		success:(data)=>{
 			if(data.data){
