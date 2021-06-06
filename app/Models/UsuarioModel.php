@@ -13,7 +13,7 @@ class UsuarioModel extends Model
         if($email === null || $pass === null){
             return null;
         }else{
-            return $this->query("SELECT IdUsuario FROM usuario WHERE Email = '" . $email . "' AND Password = '" . $pass . "';");
+            return $this->query("SELECT IdUsuario FROM usuario WHERE Email = '" . $email . "' AND Password = '" . $pass . "';")->getResult('array')[0]['IdUsuario'];
         }
     }
     public function post($firstname, $lastname, $email, $phone, $password, $addres1, $address2, 

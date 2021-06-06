@@ -31,7 +31,7 @@ class UserController extends ResourceController
                 $token = [
                     'email' => $email,
                     'password' => $pass,
-                    'id'=> $idsession, 
+                    'usuario'=> $idsession, 
                     'loggin' => TRUE
                 ];
                 $session->set($token);
@@ -88,7 +88,7 @@ class UserController extends ResourceController
         $token = [
             'email' => $this->request->getPost('email'),
             'password' => $this->request->getPost('password'),
-            'id' => $id,
+            'usuario' => $id,
             'loggin' => TRUE
         ];
         $session->set($token);
