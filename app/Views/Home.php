@@ -27,7 +27,7 @@
 </div>
 <div class="w-100 row bk-white">
   <div class="col-md-4 text-center">
-      <h4 class="py-2">Series</h4>
+      <h4 class="py-2"><a href="<?php echo base_url("search/Series"); ?>">Series</a></h4>
       <div id="carouselSeries" style="width:300px; display:inline-block;" class="carousel slide pb-2" data-ride="carousel">
         <div class="carousel-inner">
         </div>
@@ -42,7 +42,7 @@
       </div>
   </div>
   <div class="col-md-4 text-center">
-      <h4 class="py-2">Variety</h4>
+      <h4 class="py-2"><a href="<?php echo base_url("search/Webshow"); ?>">Variety</a></h4>
       <div id="carouselVariety" style="width:300px; display:inline-block;" class="carousel slide pb-2" data-ride="carousel">
         <div class="carousel-inner">
         </div>
@@ -57,7 +57,7 @@
       </div>
   </div>
   <div class="col-md-4 text-center">
-      <h4 class="py-2">Records</h4>
+      <h4 class="py-2"><a href="<?php echo base_url("search/Records"); ?>">Records</a></h4>
       <div id="carouselRecords" style="width:300px; display:inline-block;" class="carousel slide pb-2" data-ride="carousel">
         <div class="carousel-inner">
         </div>

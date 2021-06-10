@@ -117,6 +117,14 @@
         </div>
     </div>
 </div>
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="confirm">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      Esta por registrarse en la pagina GMM
+      <button id="confirmarbtn">Aceptar</button>
+    </div>
+  </div>
+</div>
 <footer class="bg-primary text-white text-center text-lg-start">
     <!-- Grid container -->
     <div class="container py-4 px-0">

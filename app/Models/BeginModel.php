@@ -50,7 +50,7 @@ class BeginModel extends Model
                 $queryBegin = "SELECT b.BeginId Id, 3 Tab, b.Title Title, b.Description Descripcion, b.Image Imagen FROM begin as b WHERE b.Genere like '%Record%';";
                 $buscar1 = $db->query($queryBegin)->getResult();
             } else {
-                $queryArtist = "SELECT ar.IdArtist Id, 1 Tab, ar.Real_name Title, ar.Nickname Descripcion, ar.Image Imagen FROM artist as ar WHERE ar.Real_name LIKE '%" . $v_search . "%' or ar.Nickname LIKE '%" . $v_search . "%';";
+                $queryArtist = "SELECT ar.IdArtist Id, 1 Tab, ar.Real_name Title, ar.Nickname Descripcion, ar.Image Imagen FROM artist as ar join brands br on br.IdBrands = ar.idbrand WHERE ar.Real_name LIKE '%" . $v_search . "%' or ar.Nickname LIKE '%" . $v_search . "%' or br.Category LIKE '%" . $v_search . "%' or ar.skin LIKE '%" . $v_search . "%';";
                 $buscar1 = $db->query($queryArtist)->getResult();
                 $queryArticle = "SELECT pro.IdArticulo Id, 2 Tab, pro.Category Title, pro.Descripcion Descripcion, pro.Imagen Imagen FROM article as pro WHERE pro.Category LIKE '%" . $v_search . "%' or pro.Descripcion LIKE '%" . $v_search . "%';";
                 $buscar1 += $db->query($queryArticle)->getResult();

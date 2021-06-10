@@ -43,7 +43,7 @@ $('.step-3').click(()=>{
 	$('#registerstep-2').hide();
 	$('#registerstep-1').hide();
 	$('.step-3').text('REGISTER');
-	$('.step-3').click(register);
+	$('.step-3').click(confirm);
 });
 $('.close').click(()=>{
 	$('#register').hide();
@@ -119,7 +119,7 @@ let register = (e)=>{
 				$('#registerstep-3').show();
 				$('#registerstep-2').hide();
 				$('#registerstep-1').hide();
-				$('.step-3').click(register);
+				$('.step-3').click(confirm);
 			});
 		}
 	})
@@ -138,10 +138,17 @@ let cuenta = () => {
 		}
 	})
 } 
+let confirm = () => {
+	$('#confirm').modal('show');
+}
 $("#btn-search").click((e)=>{
 	e.preventDefault(); 
 	let search = $("#input-search").val();
 	window.location = BASE_URL+"/search/"+search;
+})
+
+$("#confirmarbtn").click(()=>{
+	register();
 })
 
 $("#logout").click((e)=> {

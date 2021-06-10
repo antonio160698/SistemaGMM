@@ -17,7 +17,7 @@ class ComprasController extends ResourceController
         $generic = new Home();
         $session = \Config\Services::session();
         if (isset($_SESSION['email'])) {
-            return $this->respond($generic->genericMessage($this->model->detail($_SESSION['id']),"", 200));
+            return $this->respond($generic->genericMessage($this->model->detail($_SESSION['usuario']),"", 200));
         }else{
             return $this->respond($generic->genericMessage(null, "No ha iniciado sesion", 400));
         }

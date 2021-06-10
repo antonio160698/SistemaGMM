@@ -13,6 +13,7 @@
     <p class="col-4" style="margin:20px 0 20px 0;" id="detail-state">State: </p>
     <p class="col-4" style="margin:20px 0 20px 0;" id="detail-gene">Genre: </p>
     <p class="col-12" style="margin:20px 0 20px 0;" id="detail-description">Description</p>
+    <div id="detail-video" style="text-align:center;width:100%;"></div>
 </div>
 </div>
 <script src="<?= base_url('js/detail.js') ?>"></script>

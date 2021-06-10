@@ -6,7 +6,7 @@ class ArtistModel extends Model
 {
     protected $table = 'artist';
     protected $primaryKey = 'IdArtist';
-    protected $allowedFields = ['Tiktok', 'Twitter', 'Instagram', 'Email', 'Skills', 'Width', 'Height', 'Years_old', 'Real_name', 'Nickname', 'Image'];
+    protected $allowedFields = ['Tiktok', 'Twitter', 'Instagram', 'Email', 'Skills', 'Width', 'Height', 'Years_old', 'Real_name', 'Nickname', 'Image', 'idbrand', 'skin'];
 
     public function todo(){
         return $this->findAll();

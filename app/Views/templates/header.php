@@ -71,16 +71,7 @@
                         <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="material-icons"><i class="fas fa-shopping-bag"></i></span></button>
                         <div class="dropdown-menu" aria-labelledby="dLabel">
                             <div class="row" style="width:300px;">
-                                <div class="col-4"><img src="<?php echo base_url("img/carrousel/images.jpg"); ?>" class="w-100"></div>
-                                <div class="col-6">
-                                    <p>Title
-                                    <p>
-                                    <div class="row">
-                                        <input type="number" min="0" id="" class="col-6" style="height:25px;padding-right:0px;padding-left:0px;">
-                                        <p class="col-6">total</p>
-                                    </div>
-                                    <button class="btn col-12" style="background:#25629F; color:white;">CHECKOUT</button>
-                                </div>
+                                
                             </div>
                             <div class="dropdown-divider"></div>
                             <div class="flex-row">
