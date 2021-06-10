@@ -42,11 +42,12 @@ footer {
     width: 80px;
     margin: 0;
     padding: 0;
+    margin-right: 20px;
   }
   
   header #drop {
-    margin-left: 20px;
-    margin-right: 20px;
+    /*margin-left: 20px;
+    margin-right: 20px;*/
     color: darkgray;
     font-size: 15px;
   }
@@ -224,3 +225,8 @@ footer a, footer a:hover, .carousel-inner a, .carousel-inner a:hover, .modal-bod
 .carousel-inner a> p, .carousel-inner a> p:hover{
   color:black !important;
 }
+
+.navbar-nav .nav-link {
+  margin-right: 20px;
+}
+

@@ -33,39 +33,64 @@
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="<?php echo base_url(); ?>" class="nav-item nav-link">Content</a>
-                <a href="<?php echo base_url("article"); ?>" class="nav-item nav-link">Shop</a>
-                <a href="<?php echo base_url("artist"); ?>" class="nav-item nav-link">Artist</a>
-            </div>
-
-            <form class="form-inline" style="width:60%;background-color:transparent;right:20px;position:absolute;">
-
-                <input id="input-search" style="width:88%;" type="text" class="form-control mr-sm-2" placeholder="Search">
-                <button id="btn-search"><span class="material-icons">search</span></button>
-                <div class="dropdown admin">
-                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="material-icons"><i class="fas fa-shopping-bag"></i></span></button>
-                    <div class="dropdown-menu" aria-labelledby="dLabel">
-                        <div class="row" style="width:300px;">
-                            <div class="col-4"><img src="<?php echo base_url("img/carrousel/images.jpg"); ?>" class="w-100"></div>
-                            <div class="col-6">
-                                <p>Title
-                                <p>
-                                <div class="row">
-                                    <input type="number" min="0" id="" class="col-6" style="height:25px;padding-right:0px;padding-left:0px;">
-                                    <p class="col-6">total</p>
-                                </div>
-                                <button class="btn col-12" style="background:#25629F; color:white;">CHECKOUT</button>
-                            </div>
-                        </div>
-                        <div class="dropdown-divider"></div>
-                        <div class="flex-row">
-                        <a class="float-left nav-link" href="<?php echo base_url("wishlist"); ?>">Wishlist</a>
-                        <a class="float-right nav-link" href="#" id="logout">Log out</a>
-                        </div>
+                <div class="nav-item dropdown" id="drop">
+                    <a href="<?php echo base_url(); ?>" class="nav-link dropdown-toggle" data-toggle="dropdown">Content</a>
+                    <div class="dropdown-menu">
+                        <br>
+                        <a href="<?php echo base_url("search/Series"); ?>" class="dropdown-item">Series</a>
+                        <hr>
+                        <a href="<?php echo base_url("search/Records"); ?>" class="dropdown-item">Records</a>
+                        <hr>
+                        <a href="<?php echo base_url("search/Webshow"); ?>" class="dropdown-item">Variety</a>
+                        <br>
                     </div>
                 </div>
-                <button id="count-logout" type="button" data-toggle="modal" data-target=".bd-example-modal-lg"><span class="material-icons">account_circle</span></button>
+                <div class="nav-item dropdown">
+                    <a href="<?php echo base_url("article"); ?>" class="nav-link dropdown-toggle" data-toggle="dropdown">Shop</a>
+                    <div class="dropdown-menu">
+                        <br>
+                        <a href="#" class="dropdown-item">All</a>
+                        <a href="#" class="dropdown-item">News</a>
+                        <a href="#" class="dropdown-item">Promotions</a>
+                        <hr>
+                        <a href="<?php echo base_url("search/Merchandasing"); ?>" class="dropdown-item">Merchandasing</a>
+                        <hr>
+                        <a href="<?php echo base_url("search/Skincare"); ?>" class="dropdown-item">Skincare</a>
+                        <hr>
+                        <a href="<?php echo base_url("search/Makeup"); ?>" class="dropdown-item">Makeup</a>
+                        <br>
+                    </div>
+                </div>
+                <a href="<?php echo base_url("artist"); ?>" class="nav-item nav-link">Artist</a>
 
-            </form>
+                <form class="form-inline" style="width:60%;background-color:transparent;right:20px;position:absolute;">
+
+                    <input id="input-search" style="width:88%;" type="text" class="form-control mr-sm-2" placeholder="Search">
+                    <button id="btn-search"><span class="material-icons">search</span></button>
+                    <div class="dropdown admin">
+                        <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="material-icons"><i class="fas fa-shopping-bag"></i></span></button>
+                        <div class="dropdown-menu" aria-labelledby="dLabel">
+                            <div class="row" style="width:300px;">
+                                <div class="col-4"><img src="<?php echo base_url("img/carrousel/images.jpg"); ?>" class="w-100"></div>
+                                <div class="col-6">
+                                    <p>Title
+                                    <p>
+                                    <div class="row">
+                                        <input type="number" min="0" id="" class="col-6" style="height:25px;padding-right:0px;padding-left:0px;">
+                                        <p class="col-6">total</p>
+                                    </div>
+                                    <button class="btn col-12" style="background:#25629F; color:white;">CHECKOUT</button>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="flex-row">
+                                <a class="float-left nav-link" href="<?php echo base_url("wishlist"); ?>">Wishlist</a>
+                                <a class="float-right nav-link" href="#" id="logout">Log out</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="count-logout" type="button" data-toggle="modal" data-target=".bd-example-modal-lg"><span class="material-icons">account_circle</span></button>
+
+                </form>
     </nav>
 </header>

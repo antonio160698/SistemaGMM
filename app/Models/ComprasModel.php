@@ -24,7 +24,7 @@ class ComprasModel extends Model
     public function detail(){
         $db = db_connect();
         try{
-            $queryArtist = "SELECT art.* FROM compra cpr join article art on art.IdArticulo = cpr.IdArticle";
+            $queryArtist = "SELECT art.*, Cantidad FROM compra cpr join article art on art.IdArticulo = cpr.IdArticle";
             $buscar1 = $db->query($queryArtist)->getResult();
             $execute = $buscar1;
         }catch(Exception $e){
